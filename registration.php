@@ -16,7 +16,7 @@
 <div>
 <form method="post" action="registration.php">
 <div class="container">
- <h1> Registration Form </h1>
+ <h1 > Registration Form </h1>
  <p> fill up all the field</p>
 
   <label> Username  </label>

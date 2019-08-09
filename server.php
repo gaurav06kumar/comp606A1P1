@@ -38,7 +38,7 @@ else{
         echo ' run ';
         $_SESSION['username']=$username;
         $_SESSION['sucess']=" You are now logged in";
-        header('location:index.php');
+        header('location:profile.php');
 
 
     }
@@ -100,7 +100,7 @@ if(isset($_POST['login']))
 
     $_SESSION['username']=$username;
     $_SESSION['sucess']="you are now logged in";
-    header('location:index.php');
+    header('location:profile.php');
    }
 
    else{
