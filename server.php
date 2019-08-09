@@ -11,9 +11,7 @@ if($db->connect_error)
 {
  die("Connection failed: " . $db->connect_error);
 }
-else{
-
-}
+ 
 
 
 if(isset($_POST['register']))
@@ -144,10 +142,15 @@ if($password==$password2)
    $sql = "UPDATE user SET password='$password' WHERE email='$email'";
 $result=mysqli_query($db, $sql);
 if ($result=TRUE) {
-  echo '<script language="javascript">';
-  echo 'alert("password changed")';
-  echo '</script>';
-     header('location:login.php');
+
+
+
+echo "<script>if(confirm('Your Password change Sucessfully   Now Login')){document.location.href='login.php'};</script>";     //find from stackoverflow
+
+
+
+
+
 } else {
   echo '<script language="javascript">';
   echo 'alert("password not changed")';
