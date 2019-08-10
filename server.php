@@ -11,7 +11,7 @@ if($db->connect_error)
 {
  die("Connection failed: " . $db->connect_error);
 }
- 
+
 
 
 if(isset($_POST['register']))
@@ -27,7 +27,7 @@ if(isset($_POST['register']))
 
    $check_query = "SELECT * FROM user WHERE username='$username' OR email='$email' ";
    $result = mysqli_query($db, $check_query);
-   $user = mysqli_fetch_assoc($result);
+  // $user = mysqli_fetch_assoc($result);
 
    if (mysqli_num_rows($result) > 0)
    {
@@ -89,7 +89,7 @@ if(isset($_POST['login']))
  if($rows==1)
  {
    $_SESSION['username']=$username;
-   $_SESSION['sucess']="you are now logged in";
+// $_SESSION['sucess']="you are now logged in";
    header('location:profile.php');
  }
 
