@@ -1,3 +1,4 @@
+ <!-- HTML page for login -->
 <?php
  require 'server.php';
  ?>
@@ -14,7 +15,7 @@
   <div class="header">
     <h2>Login</h2>
   </div>
-  <form method="post" action="login.php">
+  <form method="post" action="login.php">        <!-- create from for data input from user -->
 
 <div class="input-group">
   <label>Username</label>
@@ -30,8 +31,8 @@
   <button type="submit" name="login" class="btn">login</button>
 </div>
 
-<p> forgot password <a href ="forgot.php"> click here </a></p>
-<p> not  a member? <a href="registration.php"> sign up </a> </p>
+<p> forgot password <a href ="forgot.php"> click here </a></p>                       <!-- move to forgot password page  -->
+<p> not  a member? <a href="registration.php"> sign up </a> </p>                       <!-- move to registration page  -->
 
   </form>
 

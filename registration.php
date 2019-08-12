@@ -1,3 +1,5 @@
+
+ <!-- HTML  page for sign up   -->
 <?php  require 'server.php';?>
 <!DOCTYPE html>
 <html>
@@ -10,7 +12,7 @@
   <div class="header">
     <h2>Registration Form </h2>
   </div>
-  <form method="post" action="registration.php">
+  <form method="post" action="registration.php">        <!-- craeted for user data input   -->
 
 
 <div class="input-group">
@@ -32,7 +34,7 @@
 <div class="input-group">
   <button type="submit" name="register" class="btn">Register</button>
 </div>
-<p> Already a member? <a href="login.php"> sign in </a>
+<p> Already a member? <a href="login.php"> sign in </a>                    <!-- move to  login  page  -->
 </p>
 
   </form>

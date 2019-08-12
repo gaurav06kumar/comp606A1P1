@@ -1,3 +1,4 @@
+ <!-- HTML page for forgot password-->
 <?php
  require 'server.php';
  ?>
@@ -12,7 +13,7 @@
   <div class="header">
     <h2>Password Reset</h2>
   </div>
-  <form method="post" action="forgot.php">
+  <form method="post" action="forgot.php">      <!-- create from for email input from user -->
 
 
     <div class="input-group">

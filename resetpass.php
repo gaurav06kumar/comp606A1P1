@@ -1,3 +1,4 @@
+ <!-- this HTML page for enter new password -->
 <?php  require 'server.php';?>
 <!DOCTYPE html>
 <html>
@@ -10,7 +11,7 @@
   <div class="header">
     <h2>Registration Form </h2>
   </div>
-  <form method="post" action="resetpass.php">
+  <form method="post" action="resetpass.php">    <!-- created for input new password  -->
 
 
 
@@ -35,7 +36,7 @@
   <button type="submit" name="change" class="btn">change</button>
 </div>
 
-<p>  go to login page  <a href="login.php">login </a>
+<p>  go to login page  <a href="login.php">login </a>   <!-- move to login  page  -->
 </p>
 
   </form>
